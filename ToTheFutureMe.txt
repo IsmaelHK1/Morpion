@@ -1,0 +1,4 @@
+This is fonctionnality i would add next :
+
+# An IA when u playing alone
+# An Authentication and a Database with a math history

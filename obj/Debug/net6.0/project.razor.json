@@ -16303,6 +16303,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\yboul\\OneDrive\\Bureau\\Ynov\\Morpion\\Views\\Home\\Game.cshtml",
+      "TargetPath": "Views\\Home\\Game.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\yboul\\OneDrive\\Bureau\\Ynov\\Morpion\\Views\\Home\\Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
       "FileKind": "mvc"

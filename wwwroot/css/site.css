@@ -11,6 +11,7 @@ html {
 html {
   position: relative;
   min-height: 100%;
+  background-color: #78788d;
 }
 
 body {
