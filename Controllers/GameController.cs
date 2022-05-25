@@ -23,22 +23,22 @@ namespace Morpion.Controllers
         /* Définition model */
         private static readonly HttpClient client = new HttpClient();
 
-        [HttpPost]
-        [ActionName("Complex")]
-        public HttpResponse PostComplex(BoardModel board)
-        {
-            new BoardModel board = new BoardModel();
-            board.Status = HttpUtility.HtmlEncode(update.Status);
-            var request = WebRequest.Create(url);
-            request.Method = "POST";
-        }
+        // [HttpPost]
+        // [ActionName("Complex")]
+        // public HttpResponse PostComplex()
+        // {
+        //     new BoardModel() board;
+        //     board.Status = HttpUtility.HtmlEncode(update.Status);
+        //     var request = WebRequest.Create(url);
+        //     request.Method = "POST";
+        // }
 
         [HttpGet]
         public void GetBoard(Guid id)
         {
             BoardModel board = new BoardModel();
             SetPos(Convert.ToInt32(id));
-
+            Console.WriteLine(id);
         }
         //Set une position
         public void SetPos(int id)

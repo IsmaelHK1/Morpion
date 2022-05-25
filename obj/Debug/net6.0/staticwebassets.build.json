@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "7U2eXa41E+r5e4gCKu838acd4Uxqcmo6vf4c/fVqrec=",
+  "Hash": "Osbpg3//vV+JRPbUWtfbvawtNCKFd3/G4gDVTHCDnXk=",
   "Source": "Morpion",
   "BasePath": "_content/Morpion",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\yboul\\OneDrive\\Bureau\\Ynov\\Morpion\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Morpion.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\yboul\\OneDrive\\Bureau\\Ynov\\Morpion\\wwwroot\\css\\game.css",
+      "SourceId": "Morpion",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\yboul\\OneDrive\\Bureau\\Ynov\\Morpion\\wwwroot\\",
+      "BasePath": "_content/Morpion",
+      "RelativePath": "css/game.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\game.css"
     },
     {
       "Identity": "C:\\Users\\yboul\\OneDrive\\Bureau\\Ynov\\Morpion\\wwwroot\\css\\site.css",

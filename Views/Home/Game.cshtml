@@ -7,26 +7,53 @@
 
 <div class="Score" id="TeamRed">
 </div>
+@* row d-flex justify-content-center *@
 
-<form id="Form1" method="post" action="api/updates/complex" enctype="application/x-www-form-urlencoded">
+<div class="row">
+    <div class="Block col border border-dark" id="Case1" onclick="Selected(1);">1
+    </div>
+    <div class="Block col border border-dark" id="Block" onclick="Selected(2);">1
+    </div>
+</div>
+<div class="row">
+    <div class="Block col border border-dark" id="Case3" onclick="Selected(3);">1
+    </div>
+    <div class="Block col border border-dark" id="Case4" onclick="Selected(4);">1
+    </div>
+</div>
+<div class="row">
+    <div class="Block col border border-dark" id="Case5" onclick="Selected(5);">1
+    </div>
+    <div class="Block col border border-dark" id="Case6" onclick="Selected(6);">1
+    </div>
+</div>
 
-    <div class="Block" id="Case1" onclick="Selected(1);">
-    </div>
-    <div class="Block" id="Block" onclick="Selected(2);">
-    </div>
-    <div class="Block" id="Case3" onclick="Selected(3);">
-    </div>
-    <div class="Block" id="Case4" onclick="Selected(4);">
-    </div>
-    <div class="Block" id="Case5" onclick="Selected(5);">
-    </div>
-    <div class="Block" id="Case6" onclick="Selected(6);">
-    </div>
-</form>
 
 <script>
     function Selected(num) {
-        var Case = document.getElementById(id);
+
+        var XHR = new XMLHttpRequest();
+        var FD = new FormData();
+
+        // Mettez les données dans l'objet FormData
+        FD.append(num);
+
+
+        // Définissez ce qui se passe si la soumission s'est opérée avec succès
+        XHR.addEventListener('load', function (event) {
+            alert('Ouais ! Données envoyées et réponse chargée.');
+        });
+
+        // Definissez ce qui se passe en cas d'erreur
+        XHR.addEventListener('error', function (event) {
+            alert('Oups! Quelque chose s\'est mal passé.');
+        });
+
+        // Configurez la requête
+        XHR.open('POST', '/post');
+
+        // Expédiez l'objet FormData ; les en-têtes HTTP sont automatiquement définies
+        XHR.send(FD);
     }
 
 </script>
