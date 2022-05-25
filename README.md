@@ -1,2 +1,2 @@
 # Morpion
-This is a Morpion code in C#
+This is a Web application who play a Morpion game code in C#
